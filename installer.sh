@@ -52,6 +52,7 @@ mv .pass ~/NewOSv3/
 echo "Finishing touches..."
 sleep 5
 touch ~/NewOSv3/startup
+touch ~/NewOSv3/flogin
 echo -e "${GREENFG}NewOS is now installed! Do you want to run it now? (y/*)"
 read -r yesno
 if [ "$yesno" = "y" ]; then
