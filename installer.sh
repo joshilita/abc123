@@ -10,7 +10,7 @@ BOLD="\e[1m"
 machine=$(uname -m)
 if [ "$machine" = "Android" ]; then
 echo -e "${ERRORFG}Unfortunately, Termux is not supported. ${BBBLUE}Machine detected as ${machine} ${RESET}"
-
+else
 if [[ -d ~/NewOSv3 ]];
 then
     echo "NewOS is already installed. Do you want to uninstall it? (y/*)" 
@@ -73,5 +73,6 @@ echo "Password does not match. Restarting installer..."
 sleep 2
 bash installer.sh
 exit 0
+fi
 fi
 fi
