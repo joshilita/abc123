@@ -7,9 +7,9 @@ FOLDERNAMEFG="\e[1;38;5;45m"
 ERRORFG="\e[1;38;5;197m"
 RESET="\e[0m"
 BOLD="\e[1m"
-machine=$(uname -m)
+machine=$(uname -o)
 if [ "$machine" = "Android" ]; then
-echo -e "${ERRORFG}Unfortunately, Termux is not supported. ${BBBLUE}Machine detected as ${machine} ${RESET}"
+echo -e "${ERRORFG}Unfortunately, Termux/Android Terminal is not supported. ${BBBLUE}Operating system detected as ${machine} ${RESET}"
 else
 if [[ -d ~/NewOSv3 ]];
 then
