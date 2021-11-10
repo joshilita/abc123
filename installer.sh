@@ -9,7 +9,7 @@ RESET="\e[0m"
 BOLD="\e[1m"
 machine=$(uname -o)
 if [ "$machine" = "Android" ]; then
-echo -e "${ERRORFG}Unfortunately, Termux/Android Terminal is not supported. ${BBLUEFG}Operating system detected as ${BOLD} ${machine} ${RESET}"
+echo -e "${ERRORFG}Unfortunately, Termux is not supported. ${BBLUEFG}Operating system detected as ${machine} ${RESET}"
 else
 if [[ -d ~/NewOSv3 ]];
 then
