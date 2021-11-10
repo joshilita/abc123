@@ -7,6 +7,10 @@ FOLDERNAMEFG="\e[1;38;5;45m"
 ERRORFG="\e[1;38;5;197m"
 RESET="\e[0m"
 BOLD="\e[1m"
+machine=$(uname -m)
+if [ "$machine" = "Android" ]; then
+echo -e "${ERRORFG}Unfortunately, Termux is not supported. ${BBBLUE}Machine detected as ${machine} ${RESET}"
+
 if [[ -d ~/NewOSv3 ]];
 then
     echo "NewOS is already installed. Do you want to uninstall it? (y/*)" 
