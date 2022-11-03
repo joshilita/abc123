@@ -57,6 +57,13 @@ mv .name ~/NewOSv3/
 mv .pass ~/NewOSv3/
 echo "Finishing touches..."
 sleep 5
+echo -e "${BBLUEFG}We need to install Curl using APT.${REDWEAKFG}Requires Root Permission${RESET}"
+sudo echo -e "${GREENFG}Permission Granted!${RESET}"
+echo -e "${BBLUEFG}Updating Packages... (apt update)${RESET}"
+sudo apt update -y -qq > /dev/null
+echo -e "${BBLUEFG}Installing Curl...${RESET}"
+sudo apt install curl -y -qq > /dev/null
+
 touch ~/NewOSv3/startup
 touch ~/NewOSv3/flogin
 echo -e "${GREENFG}NewOS is now installed! Do you want to run it now? (y/*)"
