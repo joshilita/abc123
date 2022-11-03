@@ -36,6 +36,8 @@ echo -e "Verify Password"
 read -s verify
 touch ./.pass
 echo "${verify}" > ./.pass
+touch ./.host
+echo "NewOS" > ./.host
 
 if [ "$verify" = "$password" ]; then
 echo -e "${GREENFG}Password matches. Getting ready..."
