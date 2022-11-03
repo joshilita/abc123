@@ -55,6 +55,7 @@ sleep 1
 echo "Configuring User Data"
 mv .name ~/NewOSv3/
 mv .pass ~/NewOSv3/
+mv .host ~/NewOSv3/
 echo "Finishing touches..."
 sleep 5
 echo -e "${BBLUEFG}We need to install Curl using APT.${REDWEAKFG}Requires Root Permission${RESET}"
